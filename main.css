@@ -9,8 +9,6 @@ li {
     margin-right: auto;
     text-decoration: none;
     padding: 30px;
-    /*height: 400px;*/
-    /*width: 400px;*/
 }
 
 ul {
@@ -18,8 +16,6 @@ ul {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    /*height: 400px;*/
-    /*width: 400px;*/
 }
 
 a {
