@@ -3,10 +3,27 @@ body {
     color: white;
 }
 
-img {
+li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
-    width: 400px;
+    text-decoration: none;
+    padding: 30px;
+    /*height: 400px;*/
+    /*width: 400px;*/
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    /*height: 400px;*/
+    /*width: 400px;*/
+}
+
+a {
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
 }
