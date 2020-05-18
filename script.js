@@ -17,8 +17,13 @@ function loadItems() {
             li.appendChild(a);
             a.setAttribute("href", "https://bunq.me/SemService/" + item.price + "/" + item.name);
 
-            let text = document.createTextNode(item.name);
-            a.appendChild(text);
+            let img = document.createElement("IMG");
+            a.appendChild(img);
+            img.setAttribute("src", "https://semservice.s3.amazonaws.com/" + encodeURIComponent(item.name) + ".jpg");
+            img.setAttribute("width", "200px");
+            //
+            // let text = document.createTextNode(item.name);
+            // a.appendChild(text);
         }
     };
     request.send();
