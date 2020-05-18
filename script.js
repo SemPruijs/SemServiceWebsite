@@ -4,11 +4,11 @@ function loadItems() {
     request.open('GET', 'https://htun05wn1f.execute-api.us-east-1.amazonaws.com/prod/stock', true);
     request.onload = function() {
         let data = JSON.parse(this.response)
-        // let data = {items: [{"name": "White Oreo", "price": 0.45}, {"name": "White KitKat", "price": 0.99}]};
+        // let data = {list: [{"name": "White Oreo", "price": 0.45}, {"name": "White KitKat", "price": 0.99}]};
 
         let list = document.getElementById("list");
 
-        for (let item of data.items) {
+        for (let item of data.list) {
             console.log("item: " + item);
             let li = document.createElement("LI");
             list.appendChild(li);
@@ -19,11 +19,13 @@ function loadItems() {
 
             let img = document.createElement("IMG");
             a.appendChild(img);
-            img.setAttribute("src", "https://semservice.s3.amazonaws.com/" + encodeURIComponent(item.name) + ".jpg");
-            img.setAttribute("width", "200px");
-            //
-            // let text = document.createTextNode(item.name);
-            // a.appendChild(text);
+            img.setAttribute("src", "https://semservice.s3.amazonaws.com/" + encodeURIComponent(item.name) + ".jpeg");
+            img.setAttribute("width", "80%");
+
+            let textContainer = document.createElement("HEADER");
+            list.appendChild(textContainer);
+            let price = document.createTextNode(item.price);
+            textContainer.appendChild(price);
         }
     };
     request.send();
