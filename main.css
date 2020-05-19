@@ -1,6 +1,7 @@
 body {
     background-color: #3a4754;
     color: white;
+    font-size: 25pt;
 }
 
 li {
@@ -26,8 +27,11 @@ a {
 
 header {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 img {
     border-radius: 30pt;
+    max-width: 500px;
 }
