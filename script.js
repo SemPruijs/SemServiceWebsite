@@ -20,7 +20,7 @@ function loadItems() {
             let img = document.createElement("IMG");
             a.appendChild(img);
             img.setAttribute("src", "https://semservice.s3.amazonaws.com/" + encodeURIComponent(item.name) + ".jpeg");
-            img.setAttribute("width", "400px");
+            img.setAttribute("width", "280px");
 
             let textContainer = document.createElement("HEADER");
             list.appendChild(textContainer);
