@@ -1,7 +1,7 @@
 body {
     background-color: #3a4754;
     color: white;
-    font-size: 25pt;
+    font-size: 35pt;
 }
 
 li {
@@ -33,5 +33,4 @@ header {
 
 img {
     border-radius: 30pt;
-    max-width: 500px;
 }
