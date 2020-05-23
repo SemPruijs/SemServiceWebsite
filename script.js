@@ -15,7 +15,7 @@ function loadItems() {
 
             let a = document.createElement("A");
             li.appendChild(a);
-            a.setAttribute("href", "https://bunq.me/SemService/" + item.price + "/" + item.name);
+            a.setAttribute("href", `https://bunq.me/SemService/${item}.price/${item.name}`);
 
             let img = document.createElement("IMG");
             a.appendChild(img);
@@ -24,7 +24,7 @@ function loadItems() {
 
             let textContainer = document.createElement("HEADER");
             list.appendChild(textContainer);
-            let price = document.createTextNode(item.price);
+            let price = document.createTextNode(item.price.toFixed(2));
             textContainer.appendChild(price);
         }
     };
