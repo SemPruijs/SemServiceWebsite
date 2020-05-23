@@ -15,7 +15,7 @@ function loadItems() {
 
             let a = document.createElement("A");
             li.appendChild(a);
-            a.setAttribute("href", `https://bunq.me/SemService/${item}.price/${item.name}`);
+            a.setAttribute("href", `https://bunq.me/SemService/${item.price}/${item.name}`);
 
             let img = document.createElement("IMG");
             a.appendChild(img);
