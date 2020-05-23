@@ -7,16 +7,17 @@ body {
 
 li {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align:center;
+    width:100%;
+    margin:auto;
     text-decoration: none;
 }
 
 ul {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: 0;
 }
 
 a {
