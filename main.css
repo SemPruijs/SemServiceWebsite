@@ -9,7 +9,6 @@ li {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
-    padding: 30px;
 }
 
 ul {
@@ -21,14 +20,15 @@ ul {
 
 a {
     text-decoration: none;
-    font-size: 50px;
+    font-size: 30px;
     color: white;
 }
 
 header {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 60px;
+    margin-top: 10px;
 }
 
 img {
