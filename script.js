@@ -1,7 +1,7 @@
 
 function loadItems() {
     let request = new XMLHttpRequest();
-    request.open('GET', 'https://htun05wn1f.execute-api.us-east-1.amazonaws.com/prod/stock', true);
+    request.open('GET', 'https://g35r7thyr5.execute-api.eu-central-1.amazonaws.com/Prod/shop/stock', true);
     request.onload = function() {
         let data = JSON.parse(this.response)
         // let data = {list: [{"name": "White Oreo", "price": 0.45}, {"name": "White KitKat", "price": 0.99}]};
@@ -19,7 +19,7 @@ function loadItems() {
 
             let img = document.createElement("IMG");
             a.appendChild(img);
-            img.setAttribute("src", "https://semservice.s3.amazonaws.com/" + encodeURIComponent(item.name) + ".jpeg");
+            img.setAttribute("src", item.image);
             img.setAttribute("width", "200px");
 
             let textContainer = document.createElement("HEADER");
